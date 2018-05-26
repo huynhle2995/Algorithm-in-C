@@ -14,6 +14,12 @@ int main()
 					/// progress to store 999 values by 1
 	
 	for (i=2; i <= N/2; i++)	// i belong [2, 500].
-		for (j=2; j <= N/i; j++)
+		for (j=2; j <= N/i; j++)	// decrease amount of j, from j=2 to 500 333 
 			a[i*j] = 0;
+	
+	for (i=1; i <= N; i++)
+		if (a[i])		// if 1, true
+			printf ("%4d", i);
+	
+	printf ("\n");
 }
